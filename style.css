@@ -1,0 +1,221 @@
+body {
+    background: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 3em 2em 3em;
+    z-index: 1;
+}
+
+.navbar-logo {
+    width: 7rem;
+    height: 100%;
+}
+
+.navbar_navitems {
+    display: flex;
+    gap: 2em;
+}
+
+.language_options {
+    background-color: black;
+    opacity: 60%;
+    border-radius: 3%;
+    color: white;
+    border-color: white;
+}
+
+.login_button {
+    color: white;
+    background-color: #e50914;
+    width: 5rem;
+    height: 2.3rem;
+    border-radius: 7%;
+    display: flex;
+}
+
+.login {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1.2rem;
+}
+
+.hero_container {
+    width: 100%;
+    height: 80%;
+}
+
+.hero_background_img {
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+}
+
+.hero_background-gradient {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.5),
+            rgba(0,0,0,.9)
+        );
+}
+
+.container_card {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center; 
+    gap: 1rem;
+}
+
+.card_title {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
+.card_subtitle {
+    font-size: 1.5rem;
+}
+
+.card_email_title {
+    font-weight: 1rem;
+}
+
+.card_email{
+  display: flex;
+
+}
+
+.card_email input{
+    width: 65%;
+    height: 50px;
+    border-radius: 2px;
+    border: 1px solid #8c8c8c;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-left: 2.2em;
+}
+
+input::placeholder {
+    color: gray;
+    margin-left: 10px;
+}
+
+.card_email button {
+    font-size: large;
+    background-color: #e50914;
+    border: 1px solid #e50914;
+    width: 120px;
+    height: 50px;
+    color: white;
+    margin-left: 0.2px;
+}
+
+.style_cards h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    padding-left: 0;
+}
+
+.style_cards h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.card1 {
+    border-top: 7px solid rgb(53, 53, 53);
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.card1_text {
+    padding-left: 70px;
+}
+
+.card1 video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 56.5%;
+    top: 21%;
+    max-width: 35%;
+    max-height: 50%;
+    z-index: -1;
+}
+
+.card1 img {
+    width: 120%;
+    height: 100%;
+}
+
+.card2 {
+    border-top: 7px solid rgb(53,53,53);
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.card2 img {
+    width: 80%;
+    height: 100%;
+}
+
+.card3 {
+    border-top: 7px solid rgb(53,53,53);
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.card3_text {
+    padding-left: 70px;
+}
+
+.card3 video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 59%;
+    top: 9%;
+    max-width: 30%;
+    max-height: 50%;
+    z-index: -1;
+}
+
+.card4 {
+    border-top: 8px solid rgb(69,69,69);
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.card4 img {
+    width: 90%;
+    height: 90%;
+}
