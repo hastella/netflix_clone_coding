@@ -25,12 +25,29 @@ body {
 }
 
 .language_options {
-    background-color: black;
-    opacity: 60%;
+    background-color: rgba(0, 0, 0, 0.382);
     border-radius: 3%;
-    color: white;
     border-color: white;
+    color: white;
 }
+
+.dropdown .dropdown-menu {
+    background-color: rgb(42, 45, 54);
+    font-size: small;
+    margin-left: -80px;
+    margin-top: -30%;
+    border: 1px solid white;
+}
+
+.dropdown-menu:hover {
+    color: blue;
+}
+
+
+.dropdown a {
+    color: white;
+}
+
 
 .login_button {
     color: white;
@@ -354,6 +371,19 @@ footer h3 {
 
 .col {
     margin-top: 0.8rem;
+}
+
+.footer_language_options {
+    background-color: rgba(0, 0, 0, 0.382);
+    border-radius: 3%;
+    border-color: gray;
+    color: gray;
+    padding: 1rem;
+}
+
+.footer_language_options i,
+.footer_language_options span {
+    padding-right: 1rem;
 }
 
 .footer_info {

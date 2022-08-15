@@ -1,0 +1,204 @@
+body {
+    background: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background: transparent;
+    border: 3px solid red;
+    display: flex;
+    color: white;
+    background-image: 
+    linear-gradient(
+        180deg,
+        rgba(0,0,0,.7) 10%,transparent);
+}
+
+.netflix-nav {
+    display: block;
+}
+
+.navbar-logo {
+    margin-left: 2.5rem;
+    width: 6rem;
+    height: 100%;
+}
+
+.navbar-right {
+    margin-right: 1rem;
+}
+
+.nav-items-search, .nav-item-kids, .nav-item-notification, .nav-item-profile {
+    padding-left: 1.3rem;
+}
+
+.searchBar{
+    display: flex;
+}
+
+.searchBtn {
+    z-index: 2;
+}
+
+.searchInput {
+    width: 100%;
+}
+
+#search {
+    display: none;
+}
+
+.btn-secondary {
+    --bs-btn-bg: none;
+    --bs-btn-border-color: none;
+}
+
+
+.nav-item-kids a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item-profile li {
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+.nav-item-profile img {
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hero_background_left_gradient {
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 0 ;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(77deg,rgba(0,0,0,.6),transparent 85%);
+}
+
+.hero_background_gradient {
+    position: absolute;
+    /* border: 3px solid red; */
+    width: 100%;
+    height: 50%;
+    top: 70%;
+    background-image: 
+    linear-gradient(
+        180deg,
+        hsla(0,0%,8%,0) 0,
+        hsla(0,0%,8%,.15) 15%,
+        hsla(0,0%,8%,.35) 29%,
+        hsla(0,0%,8%,.58) 44%,
+        #141414 68%,#141414);
+}
+
+.hero_left {
+    /* border: 3px solid red; */
+    position: absolute;
+    top: 15%;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_left_logo {
+    width: 75%;
+}
+
+.hero_left_bottom {
+    margin-top: 1rem;
+}
+
+.hero_left_bottom h5 {
+    font-weight: bolder;
+}
+
+.hero_left_bottom button {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+.play_button {
+    border: none;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 5px;
+    display:block
+}
+
+.play_icon {
+    margin-right: 0.8rem;
+}
+
+.info_button {
+    border: none;
+    background-color: rgba(128, 128, 128, 0.707);
+    color: white;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 5px;
+    display:inline-flex
+}
+
+.info_icon {
+    margin-right: 0.5rem;
+}
+
+.hero_right {
+     /* border: 3px solid red; */
+     position: absolute;
+     top: 70%;
+     right: 0;
+     display: flex;
+     flex-direction: column;
+     width: 100px;
+}
+
+.maturity_graphic {
+   background:rgba(40, 40, 40, 0.253);
+   border-left: 3px solid white;
+}
+
+.maturity_graphic_icon {
+    width: 30%;
+    height: 100%;
+    margin-left: 0.8rem;
+    padding: 0.1rem 0 0.1rem 0;
+}
+
+ *, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+.main_slider_container {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.slider_container {
+    border: 3px solid red;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+}
+
+.slider img {
+    flex: 0 0 20%;       /* flex-grow, flex-shrink, width */
+    width: 20%;
+    padding: 0.25rem;
+    border-radius: 6px;
+
+}

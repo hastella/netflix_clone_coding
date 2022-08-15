@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈 - 넷플릭스</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="netflix-nav navbar navbar-dark fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class= "navbar-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1597px-Netflix_2015_logo.svg.png?20190206123158" alt="logo"></a>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">홈</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">시리즈</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">영화</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NEW! 요즘 대세 콘텐츠</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">내가 찜한 콘텐츠</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">언어별로 찾아보기</a>
+              </li>
+            </ul>
+            <div class="navbar-right">
+                <div class="nav-items-search right d-flex align-items-center">
+                    <div class="searchBar">
+                        <span id="search"><input class="searchInput" type="text" placeholder="제목,사람,장르"></span>
+                        <span class="searchBtn" class="fas fa-search icon-button"onclick="toggleSearch()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11C3 8.23858 5.23858 6 8 6C10.7614 6 13 8.23858 13 11ZM14.0425 16.2431C12.5758 17.932 10.4126 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183 3 16 6.58172 16 11C16 11.9287 15.8417 12.8205 15.5507 13.6497L24.2533 18.7028L22.7468 21.2972L14.0425 16.2431Z" fill="currentColor"></path></svg>
+                        </span>
+                    </div>
+                    <div class="nav-item-kids">
+                        <a href="#">키즈</a>
+                    </div>
+                    <div class="nav-item-notification">
+                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.57092C16.3922 5.05624 18.9998 7.9736 18.9998 11.5V15.2538C20.0486 15.3307 21.0848 15.4245 22.107 15.5347L21.8926 17.5232C18.7219 17.1813 15.409 17 11.9998 17C8.59056 17 5.27764 17.1813 2.10699 17.5232L1.89258 15.5347C2.91473 15.4245 3.95095 15.3307 4.99978 15.2538V11.5C4.99978 7.97345 7.6076 5.05599 11 4.57086V2H13V4.57092ZM8.62568 19.3712C8.6621 20.5173 10.1509 22 11.9993 22C13.8477 22 15.3365 20.5173 15.373 19.3712C15.38 19.1489 15.1756 19 14.9531 19H9.04555C8.82308 19 8.61862 19.1489 8.62568 19.3712Z" fill="currentColor"></path></svg>
+                        </button>
+                    </div>
+                    <div class="nav-item-profile">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="profile-icon" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdpkabKqQAxyWzo6QW_ZnPz1IZLqlmNfK-t4L1VIeV1DY00JhLo_LMVFp936keDxj-V5UELAVJrU--iUUY2MaDxQSSO-0qw.png?r=e6e" alt="">
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero_container">
+            <div class="hero_background">
+                <img class="hero static-image image-layer" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABd_L7KhKv-boEv-KvVaoFT3bcBwDpTm0FUNg1Gd3iMOj-2WQIqDsob8p5XUsIO0FsgpuoIXkkYFjPkC6eq9IDHRvlUFQD1IS_cqy.webp?r=ede" alt="">           
+                <div class="hero_background_left_gradient"></div>
+                <div class="hero_background_gradient"></div>
+            </div>
+            <div class="hero_left">
+                <img alt="네버 해브 아이 에버" class="hero_left_logo" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABRH__1I8ChlKVMNnY-8MYNiQVWgSWXLqIPp7c_jSbBKPZmC8CddThan8YhPWIzrtV6_8mAReKb3ldOtq8__bqYi9myHXyO6rEVovs0HsX2LEHpL2tHOV_wTFJo9WYPpKIZXyhQRWiLcjOu1LT_VZTmLMYGm1RWxcHJRT8ArPzNTA6AopU8WmBA.webp?r=892" title="네버 해브 아이 에버">
+                <div class="hero_left_bottom">
+                    <div class="hero_left_text">
+                        <h5>시즌 3, 지금 시청하세요</h5>
+                        <h7>최고로 힘든 한 해를 보냈다. 이제 보상을 좀 받아야겠지? 인도계 미국인 소녀<br>
+                            데비의 반란. 올해는 학교에서 제일 불우한 애에서, 부러운 애로 신분 상승할<br>
+                            테다! 응?
+                        </h7>
+                    </div>
+                    <div class="hero_left_buttons d-flex align-items-center">
+                        <button class="play_button">
+                            <svg class="play_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard">
+                                <path d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z" fill="currentColor"></path>
+                            </svg>재생
+                        </button>
+                        <span>
+                            <button class="info_button">
+                                <svg class="info_icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z" fill="currentColor"></path>
+                                </svg> 
+                                <span>상세 정보</span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero_right">
+                <div class="maturity_graphic">
+                    <svg class="maturity_graphic_icon" id="maturity-rating-977" viewBox="0 0 100 100" class="svg-icon svg-icon-maturity-rating-977 "><path id="Fill---Orange" fill="#CD6D34" d="M88.727 100H11.27C5.05 100 0 94.952 0 88.727V11.273C0 5.047 5.05 0 11.27 0h77.457C94.952 0 100 5.047 100 11.273v77.454C100 94.952 94.952 100 88.727 100"></path><path id="15" fill="#FFFFFE" d="M36.876 15.482v68.651H21.509v-49.51h-5.484l7.097-19.141h13.754zm45.46 0V28.87H57.175v10.063h24.08c.845 0 1.533.687 1.533 1.534v42.13c0 .845-.688 1.532-1.534 1.532H43.616a1.533 1.533 0 01-1.533-1.533V62.202H57v8.988h10.874V52.052h-25.79v-36.57h40.254z"></path></svg>            
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main_slider_container">
+                <h6>어워드 수상! 감명을 주는 시리즈</h6>
+                <div id="carouselExampleIndicators" class="slider_container carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner slider">
+                        <div class="carousel-item active d-flex">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfSN7DqeKCkBkNUokg3Afs7ie5DJy3LhRIvmbfm9CJ_MhtJKhTOJuNAcX5ahAcznyFzvPHlvv5-1rteijJ0fmbx2HpatqHY6wus.webp?r=708">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABasCSTmlCOh9CKKqnmbIGwlld77PpwI_0UkZYA6f0PPFQWtgprQZIkhqTKOlARFlM8Wxnbs67yRsahXKPPFFjI8TX1FzLbgR5rA.webp?r=8b8">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZC3AWh250O-dFh9pYN-ypqmL0Y3n9OyOeLSRmMwVzBiKWnqgp6Q8mLLkLf4qciSuZPAW_aFy5U2cfzTLzqNXA5loA23U45hUD4.webp?r=19c">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABejvUsQQ1Z4YPzq19qf32CuynH1hIIP1Y3hTCtLm579lytFQB7LpDfXsWJQZExJmiUuoV4vBHe1LBc-nKiHo9pKe2f4_SFevEQI.webp?r=d52">
+                        <div class="carousel-item d-flex">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ1TppvaFw0mk7EQ6_soqgqNCwXOW-2Y0oCt-0hEvxiRgIMARwBj5fBqfE_vvpgbGDL2o5x3qUnOr4oIb4wl10-bCMZIcydybpFEmdsVeQMixRt0-br5nT101QPCJuRssNNi.jpg?r=a3c">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS0rra5Q7QJq9MR_OTTMC07QaBDIKttRCkxPNuTVZ7KQ2hTxU8YUlV7p3JJEyVfBe2c0wkm0g_ODNAMyH2U7CTijGQvVqmu_fzA.webp?r=ea6">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYDFpMAAqdapBa1m5HBLvth_UnUqfwjJwARFXzDypzB03rtKW_0J-RyrWVRwEx9Cp5sE-T7kyBCqOXeoNMlm629Dz2NQh0tzFpXZkuv4lw90r04EQiNiy40Dbuz94bGpjy0C.jpg?r=98f">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb0JIJgM4HxB7Ya2g1rYxG9a4pCismZsi-12QVn1jS2EO05O1lm8lyZlIFPdB22id8xGXOdBwvOT5ZONrdzww6h5BadFm1cmH_o.webp?r=b2a">
+                            <img class="w-20" src="https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQUpKGRor1oIWNhXWYciPrFIQ5NFYTyoFj28pT4NTRfV0LkHBRE4-i2G5I8CEojvBoAw_lm2SFhdjFPaGBH0xCs3pBXMQ4-2iqR-PSil5homBFodGU033WYIIHJ45SqiESoM.jpg?r=9f4">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/739348ab3c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+<!-- 
+오늘 대한민국의 Top 10영화
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABRJnMtw0heJyc7KfGtYPuvpal1jVTXdUwqGqTvjYaxMq8wXKe6jHgiJ8b7HAJXVP57Qtj3vk-GWn9Qj4TJlEqvBpNXftW-SQAeuD6a911znbxDlGMJinz0Qbw1DQGp__9mm58g.jpg?r=bab
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABZ584hKgfJB65EsClN2M6s_nOMZQl5njTD_WIxbxd-wGy1Y4L1JMPckqVxb8b3T4-ZqvNu0zcnwTeusjjPS2pnYDrynd2h7ZiyFJ1ItAWG_6ViBxDT7pklIIQa_v5ynBgTFxtQ.jpg?r=d0a
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABbxnLAbnMPff5SXKonKJOc6kydRfBMjCkFNLJ3bqVTCblZjZ8GmfLdwNRLMOyd-v0M6Ode0wtwWGSrrhM1wL_4cfddpi8vl19jpq.webp?r=f5c
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABYcOH0_LTlyQVffiDeyFlpi815xsT1umGBuSKKtgQm6ZxNMNy9nJw28GqYao5_4vjADGwDgR1TJhAlhXERIQPCnMCaPz6Kox-yC_8JJAi-WrqDSMPvjGbLuShRzw_9YsB2wcdg.jpg?r=08f
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABQtgOJMLz2UAVJB416Q_C5fzPx8qcwnZWX_a_J9CPibRFB1HsmxPlCCQXkd7MNDEKMbyn8-P9QJTq9pE6SrUo95BZb8fVSj-4TAi6aw_9OfBtCrfJRUV9fJxFY05cLsNjbgdrg.jpg?r=d6b
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABaqxiaBO-AsDi851vyVfCbkCvrYVRtjR9aaCbThumy7sj7_igjBX9bYDbysyJqF1AN6ZmlTznssBw58yaUgd1jdhZJhGyXUEYZr8rk3kzXO9ltdyNqA-Iap0HwxGzu2Ial58eA.jpg?r=c79
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABQdtkL7v9ksvpR64gyGFgnDnQoea6wx6Jal-0ADm0-LzJ0TKAY4jhH10RM_rxh7T2jggjaMQsTcL0rqY9QtXV0ffWE4McT7LLq0I.webp?r=e19
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABUJZnaSq-i6X0VwkQEkP-wYNm0leUM-7U6-dMeYmLIRAFQIIyemNfldbQyLjk5kvhHMeUVozvjQcF2fd29uClgouFmt0xCEPbWoR.webp?r=3db
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABXCmjz5jzBz1j1fL5_2bYrCjsec6fESvn1WbBIQvlFkIss85ZMIZ5pQL2Lk8Q99b9qBzQzmBJEOLYOCdw28foHgXgE8QmYTSbQUB.webp?r=967
+
+오늘 대한민국의 TOP 10 시리즈
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABZtVUBCRYOpBNSoUNVAWLXXTc0BcMbkBO8iBOZVRetLRuxc-rosVpKt-_lE7EI5rrlv9u-NuxNReLs0EWeQknNRQrBYMyN6-MDwDMSNKEy42PFAmUvW2Axq8-aZkiph-N6fwHNhH5-7SDMFtVptYSw.webp?r=b74
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABUyExE4JRcwiNlC-GY1QirBR-2H5I55qjFQ3aF7bfSBadj4IZSMTx8olz5itLV8CIzxl_8aa9Sgt9uCQuZvAzuYsi4RLRIYTbXldhxYXA3vfZsmkPqoCYtpMTMzr6-iXpHvM-w.jpg?r=9ff
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABdIcMPObthZdnSVi7w92YsvFSAda3Cjz51RXfdmBPVl3P6QWcm_w9sOM-Qd5Lhl6Um_659lax1yv6n1YUOc3vWkU8_drhVkPooxa.webp?r=c3c
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABf6Br1jbra0O0CSScqmNDw9XYjq0dmjlUZDujnfHZhinoyn6CF5yXi6xhgPZ23XFXlLi7c6GJxFBF-2dWcLrRqzR6h0Zmo5ixg4sr26FW_sHXGvTsEOeFckSKAVDzUlj_A_1I0nYhPm3lrhxVRxp-Q.webp?r=cf3
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABaQuY_34Ny5dM_gj6sRt5qbDAZn1Klu2e_qIYkGgp3zrPl0ErgBg5NPCySyrvbkJL1LTsHy8pwp72augqe1KDC4bq_FxPgfswIUQ.webp?r=6a2
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABQ5t5ZEeTTbnD7zkux2H7Ebt0zBTnzGM5chZfRcomEpkrsnrlJj12MIw8GuYM3JmoXyFPGlZHLwGhN8eSs_TQ1xpcLgKf5JNdxv-jj1ZeDccD6r_9H6osksdVPQnSaeDHSPnnadhGihFOFDRREsNtw.webp?r=7f9
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABVH9jMZvWUFwgdXMk91dd1TIKXBxDE-Rbok4Dyup-mXwpEhNufSD8e49BRnv9nV2Lpnnv0X5gGQEVmIXdNcYr53HhjOJqyBciqeCNbZid8K_Gw8j-jZ5y6BTE08skchLIguAtTdY941VE6du-UXGsA.webp?r=0f5
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABfUyK9AgmYPgjUbSyj2AV05xr8pDBRmOfAUrio7Cdu6QM1a3S0HE_6ydC_m98jOIcaF_X_M_I9NM5dm06FiIMUo20GL5FeRZCUpaQoHNmb_7wRnmC92ZDOB1Z--SgdI-zJ5N6BDLGfaCvX7zoZvGgA.webp?r=8c0
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/evlCitJPPCVCry0BZlEFb5-QjKc/AAAABfG70zr5oju6Z1v0CpKTvTUXs52_5mgV9VRGqjKipg9YIRWNHKiZ6am0fRGxXjHk4P-YvRm9ejldPbTafpoMR3wSN6HWOXoMaM4f.webp?r=a62
+
+해외 영화
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa0Y39ZkcGGOoeeoTLMRLJe0KpXXZH2xefajxWPBVK2NCKefnJ-xUkSo2JOhkSDXK5liiWIIomfHj111gAGy4CFz0q276qbAH4Q.webp?r=b61
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQa4IfNOA934e9g4JVjDTULOCSqsdYgkFXoa101VsCSv_FsgoSgDromlNunKmLiM7xhF1kdNZoZ-T3rlffmPv53usNf9ulSjCGWyxk-spjzZ9NsC9zNxj1i9b9dQ_eDjqgT4.jpg?r=fbe
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcV8QYgy6lvZpDYYsXrWoV938WiYUY9LB-oXZFb5pCTwdTSYd0ajPOTCWMpzJiGzb-V-Cr-i9rdcoghBigG9W50ATc5tQ_K8vP9dG0keAUc69xQv5IPwa5X6K6jQThVUj4Jg.jpg?r=ec4
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeJDwIDyuYuLIajuemhNibP3A8QQTt6YEPpoh28weJA4L4thVjfU1GvqMnZDWW3yoteiiEOFSgmPj5vt-WQrK24owvDj_7NqUBw.webp?r=b98
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABepedwBUnd4NHBCUTZufqrGSHyWqgtQjlnlN4y7sse1Vyju90uUJ0c-eJiRVcUdPRrLvfT2U7MW-2h0CaG4e1lAum2-QGjGk668.webp?r=005
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABS0prASbDSryPj4pdv2aoQRD1EYcIdXEI9noh7-1ghk-nduuim6S31YrtuWDAYJ116iMRaPbz1u6HXDFDXV_rJlN7s5q6ZJmgX78Gx_dJWODDNVEw8BJP7BLRn8eoCi1JZKd.jpg?r=4d0
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABR2-ca3VzDi32dhvfXdaFj4wE8B59jRxKuD6rwivODsw3SqEzkyx4I4qC1-r6g8pa-lwelajoxFiVVF03w4L0zkpZ3Cf9_NoOmTh82zdMWu3VID9blOoc2ahPYqKEqpWxM9o.jpg?r=a8d
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfYSsinkpSWZ_4Rl5eyv_3N32CX_syBM25W33jNneZcjulM6A-dPCoIhixG9p-cNnMN4nyfCzu9CAA6pRRxUQJ9dS9EtkrRJtpM.webp?r=292
+https://occ-0-4796-993.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQP7VTpiaP4ald1Gqz9foETLabgAtDklya4tqK0-EDB3qF4QBDXTg9hby0JdlcPeXjJO8CnO-xSWHPuTB4beUN2FfKSy8MyoSaQ.webp?r=9a8
+
+
+-->
