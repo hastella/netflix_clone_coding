@@ -13,7 +13,7 @@ function toggleSearch() {
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: 5,
     spaceBetween: 5,
-    slidesPerGroup: 3,
+    slidesPerGroup: 5.5,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {

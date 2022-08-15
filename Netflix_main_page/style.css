@@ -2,6 +2,7 @@ body {
     background: black;
     color: white;
     font-family: "Poppins", sans-serif;
+    display: block;
 }
 
 nav {
@@ -178,20 +179,20 @@ nav {
     box-sizing: border-box;
 }
 
-.main_slider_container {
+.main_slider {
+    border: 3px solid red;
+    width: 100%;
+    height: auto;
+    display: block;
     position: absolute;
-    top: 85%;
+    top: 85%
+}
+
+.main_slider_container {
+    /* border: 3px solid red; */
     width: 100%;
     padding-left: 5rem;
-}
-
-.slider_container {
-    border: 3px solid red;
-}
-
-.slider {
-    display: flex;
-    width: 100%;
+    padding-bottom: 3rem;
 }
 
 .swiper-slide {
@@ -203,4 +204,47 @@ nav {
     width: 100%;
     margin-right: 1px;
     border-radius: 3px;
+}
+
+.swiper-slide-rank-img {
+    width: 55%;
+    height: auto;
+}
+
+.top-10-rank {
+    width: 40%;
+    height: auto;
+}
+
+footer {
+    padding: 70rem 10rem 0 10rem;
+    border: 3px solid red;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+}
+
+.footer_info button{
+    background-color: black;
+    border-radius: 0;
+    border: 2px solid gray;
+    color: gray;
+    padding: 0.5rem;
+}
+
+.col {
+    margin-left: 0.8rem;
+    margin-top: 1rem;
+}
+
+.footer_info {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin-top: 2rem;
+    font-size: small;
 }
