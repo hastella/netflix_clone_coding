@@ -178,12 +178,11 @@ nav {
     box-sizing: border-box;
 }
 
-
 .main_slider_container {
     position: absolute;
     top: 85%;
     width: 100%;
-    padding-left: 3rem;
+    padding-left: 5rem;
 }
 
 .slider_container {
@@ -195,10 +194,13 @@ nav {
     width: 100%;
 }
 
-.slider img {
-    flex: 0 0 20%;       /* flex-grow, flex-shrink, width */
-    width: 20%;
-    padding: 0.25rem;
-    border-radius: 6px;
+.swiper-slide {
+    margin-right: 0.5px;
+}
 
+.swiper-slide-img {
+    /* flex: 0 0 100%;       flex-grow, flex-shrink, width */
+    width: 100%;
+    margin-right: 1px;
+    border-radius: 3px;
 }
