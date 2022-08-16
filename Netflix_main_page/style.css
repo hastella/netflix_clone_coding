@@ -7,7 +7,7 @@ body {
 
 nav {
     background: transparent;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     color: white;
     background-image: 
@@ -16,45 +16,77 @@ nav {
         rgba(0,0,0,.7) 10%,transparent);
 }
 
+a.nav-link.active {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: default;
+}
+
+a.nav-link {
+    color: rgba(255, 255, 255, 0.924);
+    font-weight: lighter;
+}
+
+.nav-colored {
+    background: black;
+    /* border: 3px solid red; */
+    display: flex;
+    color: white;
+}
+
+.container-fluid{
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+}
+
 .netflix-nav {
     display: block;
 }
 
 .navbar-logo {
-    margin-left: 2.5rem;
     width: 6rem;
     height: 100%;
 }
 
-.navbar-right {
-    margin-right: 1rem;
+.nav-item-kids, .nav-item-notification, .nav-item-profile {
+    padding-left: 0.8rem;
+    cursor: pointer;
 }
 
-.nav-items-search, .nav-item-kids, .nav-item-notification, .nav-item-profile {
-    padding-left: 1.3rem;
-}
-
-.searchBar{
+.searchBar {
     display: flex;
+    padding-right: 2.5rem;
 }
 
 .searchBtn {
     z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 0.5rem;
 }
 
 .searchInput {
-    width: 100%;
+    width: 230px;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0.63);
+    border: 1px solid white;
+    padding-left: 38px;
+    font-size: 16px;
+    z-index: 2;
 }
 
 #search {
     display: none;
 }
 
-.btn-secondary {
+.nav-item-notification .btn-secondary {
     --bs-btn-bg: none;
     --bs-btn-border-color: none;
 }
 
+.nav-item-notification .btn-secondary:hover {
+    --bs-btn-hover-bg: none;
+}
 
 .nav-item-kids a {
     font-size: 0.8rem;
@@ -64,11 +96,27 @@ nav {
 
 .nav-item-profile li {
     list-style: none;
-    margin-right: 1.5rem;
 }
 
 .nav-item-profile img {
     border-radius: 5px;
+}
+
+.dropdown-toggle {
+    color: white;
+}
+
+.dropdown .dropdown-menu {
+    background-color: rgb(42, 45, 54);
+    color: white;
+    font-size: small;
+    margin-left: -80px;
+    margin-top: 10%;
+    border: 1px solid white;
+}
+
+.dropdown-menu a {
+    color: white;
 }
 
 .hero {
@@ -90,7 +138,7 @@ nav {
     position: absolute;
     /* border: 3px solid red; */
     width: 100%;
-    height: 50%;
+    height: 47%;
     top: 70%;
     background-image: 
     linear-gradient(
@@ -99,7 +147,7 @@ nav {
         hsla(0,0%,8%,.15) 15%,
         hsla(0,0%,8%,.35) 29%,
         hsla(0,0%,8%,.58) 44%,
-        #141414 68%,#141414);
+        #000000 68%,#000000);
 }
 
 .hero_left {
@@ -133,7 +181,12 @@ nav {
     border: none;
     padding: 0.4rem 1rem 0.4rem 1rem;
     border-radius: 5px;
-    display:block
+    display:block;
+    text-align: center;
+}
+
+.play_button:hover {
+    background-color:rgba(255, 255, 255, 0.681);
 }
 
 .play_icon {
@@ -142,11 +195,15 @@ nav {
 
 .info_button {
     border: none;
-    background-color: rgba(128, 128, 128, 0.707);
+    background-color: rgba(128, 128, 128, 0.791);
     color: white;
     padding: 0.4rem 1rem 0.4rem 1rem;
     border-radius: 5px;
     display:inline-flex
+}
+
+.info_button:hover {
+    background-color:rgba(255, 254, 254, 0.323);
 }
 
 .info_icon {
@@ -199,6 +256,13 @@ nav {
     margin-right: 0.5px;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    /* background:rgba(128, 128, 128, 0.371);
+    padding: 5rem 2rem 5rem 2rem; */
+}
+
 .swiper-slide-img {
     /* flex: 0 0 100%;       flex-grow, flex-shrink, width */
     width: 100%;
@@ -217,7 +281,7 @@ nav {
 }
 
 footer {
-    padding: 70rem 10rem 0 10rem;
+    padding: 67rem 10rem 0 10rem;
     border: 3px solid red;
     left: 0;
     bottom: 0;
@@ -225,17 +289,27 @@ footer {
     color: gray;
 }
 
-.footer_info button{
-    background-color: black;
-    border-radius: 0;
-    border: 2px solid gray;
-    color: gray;
-    padding: 0.5rem;
+footer .col-4 {
+    margin-left: 1.5rem;
+}
+
+.btn-outline-light {
+    --bs-btn-border-color: none;
+    padding-right: 0.5rem;
+}
+
+.btn-outline-light:hover {
+    background: none;
+    color: white;
 }
 
 .col {
     margin-left: 0.8rem;
     margin-top: 1rem;
+}
+
+.col:hover {
+    text-decoration:underline;
 }
 
 .footer_info {
@@ -244,7 +318,21 @@ footer {
     margin-bottom: 10px;
 }
 
+.footer_info button {
+    background-color: black;
+    border-radius: 0;
+    border: 2px solid gray;
+    color: gray;
+    padding: 0.5rem;
+}
+
+.footer_info button:hover{
+    color:white;
+    background: none;
+    border: 2px solid gray;
+}
+
 .info {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-size: small;
 }
